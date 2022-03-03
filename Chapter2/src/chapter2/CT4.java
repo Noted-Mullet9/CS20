@@ -42,6 +42,18 @@ package chapter2;
  
  /* Screen Dump
 
+The Rules of Rock Paper Scissors 
 
+Players first will decide which hand signals they wish to represent Rock, Paper, and Scissors 
+
+Players will then count to 3 and make a signal at the same time 
+
+The signals will then be compared both signals to the chart below and determine a winner 
+
+Rock > Scissors 
+
+Scissors > Paper 
+
+Paper > Rock 
 
   */

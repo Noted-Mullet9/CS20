@@ -20,15 +20,15 @@ package chapter3;
 	
      {
 	
-	 System.out.println("Legal Identifiers: kitKat4, flying_Boat, mat4Pat, bef4 \n");
+	 // Legal Identifiers: kitKat4, flying_Boat, mat4Pat, bef4 
 	 
-	 System.out.println("manrunningtowardsstreet (This is illegal as it does not fit into the 4-15 letter range far exceeding 15 letters in length \n" );
+	 // manrunningtowardsstreet (This is illegal as it does not fit into the 4-15 letter range far exceeding 15 letters in length)
 	 
-	 System.out.println("2fast2furious (This is illegal as you should never stat an identifier name with numbers \n" );
+	 // 2fast2furious (This is illegal as you should never start an identifier name with numbers 
 	 
-	 System.out.println("select java point (This is illegal as it contains spaces and uses query language keywords \n" );
+	 //select java point (This is illegal as it contains spaces and uses query language keywords)
 	 
-	 System.out.println("int@double (This is illegal as it utilizes a special character @ and uses java reserved keywords" );
+	 // int@double (This is illegal as it utilizes a special character @ and uses java reserved keywords)
 	 
 	 
      }
