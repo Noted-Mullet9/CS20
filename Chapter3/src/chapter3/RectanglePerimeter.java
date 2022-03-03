@@ -2,7 +2,7 @@
 
  /*
 
- Program: Initials.java          Last Date of this Revision: September 30, 2019
+ Program: RectanglePerimeter.java          Last Date of this Revision: September 30, 2019
 
  Purpose: Create a BinaryNumbers application that illustrates the binary numbers 1 through 20 and their decimal equivalents.
 
