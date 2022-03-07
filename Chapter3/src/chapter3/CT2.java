@@ -19,9 +19,16 @@ package chapter3;
  public static void main(String[] args) 
 	
      {
+	 
+	 // part a) 
+	 int numBeads; 
+	 numBeads= 5;
+	 
+	 // part b)
+	 var numBeads = 5;
 	
 
-	 
+
      }
 
  }

@@ -2,28 +2,29 @@
 
  /*
 
- Program: Initials.java          Last Date of this Revision: March 2, 2022
+ Program: Initials.java          Last Date of this Revision: March 7, 2022
 
- Purpose: . 
+ Purpose: Print your initials as an output 
 
  Author: Alador Tesema, 
  School: CHHS
  Course: Computer Science 20
- 
+  
  */
 
- public class Initials 
+ public class Initials
 
  {
- 
-    public static void main(String[] args) 
 
-    {
+     public static void main(String[] args)
 
-    System.out.println("Initials: AT");
-		
-    }
-	 
+     {
+
+         // outputs initials to the screen 
+         System.out.println("Initials: AT");
+
+     }
+
  }
 
  /* Screen Dump

@@ -20,7 +20,12 @@ package chapter3;
 	
      {
 	
-	 
+	 // a) Integer (int)
+	 // b) Floating Point (float)
+	 // c) Integer (int)
+	 // d) Array 
+	 // e) Enumerated type (enum)
+	 // f) Character (char) 
 	 
      }
 
