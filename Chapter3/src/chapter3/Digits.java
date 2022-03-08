@@ -13,32 +13,31 @@
  */
 
  import java.util.Scanner;
- public class Digits 
+ public class Digits
 
  {
 
- public static void main(String[] args) 
-	
-     {
-	
-	 Scanner input = new Scanner(System.in);
-	 
-	 System.out.print("Enter a 2 digit number: ");
-     
-	 int number = input.nextInt();
-	 
-	 int ones=(number/1)%10;
-	 
-	 int tens= (number/10)%10;
-	 
-	 System.out.print("ones place: " + ones);
-	 
-	 System.out.print("\ntens place: " + tens);
-	 
-     }
+   public static void main(String[] args)
+
+   {
+
+     Scanner input = new Scanner(System.in);
+
+     System.out.print("Enter a 2 digit number: ");
+
+     int number = input.nextInt();
+
+     int ones = (number / 1) % 10;
+
+     int tens = (number / 10) % 10;
+
+     System.out.print("ones place: " + ones);
+
+     System.out.print("\ntens place: " + tens);
+
+   }
 
  }
-
 
  /* Screen Dump
 

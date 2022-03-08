@@ -1,4 +1,4 @@
- package chapter3;
+package chapter3;
 
  /*
 
@@ -12,27 +12,25 @@
  
  */
 
- public class RectanglePerimeter 
+ public class RectanglePerimeter
 
  {
 
- public static void main(String[] args) 
-	
-     {
-			
-		
-   int length = 13; 
-   int width = 4; 
-   int perimeter; 
-	
-   perimeter = 2 * width + 2 * length; 
-	
+   public static void main(String[] args)
+
+   {
+
+     int length = 13;
+     int width = 4;
+     int perimeter;
+
+     perimeter = 2 * width + 2 * length;
+
      System.out.println("Rectangles Perimeter: " + perimeter);
-		
-     }
+
+   }
 
  }
-
 
  /* Screen Dump
 
