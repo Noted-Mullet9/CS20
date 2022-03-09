@@ -2,9 +2,9 @@ package chapter3;
 
 /*
 
-Program: Digits.java          Last Date of this Revision: September 30, 2019
+Program: CT4.java          Last Date of this Revision: March 9, 2022
 
-Purpose: Create a BinaryNumbers application that illustrates the binary numbers 1 through 20 and their decimal equivalents.
+Purpose: Critical thinking question #4 on pg. 70
 
 Author: Alador Tesema, 
 School: CHHS

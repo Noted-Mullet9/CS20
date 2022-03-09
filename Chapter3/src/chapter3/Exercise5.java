@@ -1,52 +1,67 @@
 package chapter3;
 
-import java.util.Scanner;
+ /*
 
-/*
+ Program: Exercise5.java          Last Date of this Revision: March 9, 2022
 
-Program: Exercise5.java          Last Date of this Revision: September 30, 2019
+ Purpose: Exercise #5 on pg.73.
 
-Purpose: Create a BinaryNumbers application that illustrates the binary numbers 1 through 20 and their decimal equivalents.
+ Author: Alador Tesema, 
+ School: CHHS
+ Course: Computer Science 20
 
-Author: Alador Tesema, 
-School: CHHS
-Course: Computer Science 20
+ */
 
-*/
+ import java.util.Scanner;
 
-import java.util.Scanner;
-public class Exercise5
+ public class Exercise5
 
-{
+ {
 
-  public static void main(String[] args)
+   public static void main(String[] args)
 
-  {
+   {
 
-    Scanner input = new Scanner(System.in);
+     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter an amount less than 1:00$: ");
+     //prompts user for an amount of change under a dollar 
+     System.out.println("Enter an amount less than 1:00$: ");
 
-    int number = input.nextInt();
+     //records user input
+     int number = input.nextInt();
 
-    int Quarters = (number / 25);
+     //the following lines calculate how many quarters, dimes, nickels and pennies are required to make the change 
+     int Quarters = (number / 25);
 
-    int Dimes = (number % 25 / 10);
+     int Dimes = (number % 25 / 10);
 
-    int Nickels = (number % 10 / 5);
+     int Nickels = (number % 10 / 5);
 
-    int Pennies = (number % 5);
+     int Pennies = (number % 5);
 
-    System.out.println("The amount of coins required to make the change: ");
+     //The following lines output how may of each kind of coin the user needs to make the change 
+     System.out.println("The amount of coins required to make the change: ");
 
-    System.out.println("Quarters: " + Quarters);
+     System.out.println("Quarters: " + Quarters);
 
-    System.out.println("Dimes: " + Dimes);
+     System.out.println("Dimes: " + Dimes);
 
-    System.out.println("Nickels: " + Nickels);
+     System.out.println("Nickels: " + Nickels);
 
-    System.out.println("Pennies: " + Pennies);
+     System.out.println("Pennies: " + Pennies);
 
-  }
+   }
 
-}
+ }
+
+ /* Screen Dump
+
+ Enter an amount less than 1:00$: 
+ 212
+ The amount of coins required to make the change: 
+ Quarters: 8
+ Dimes: 1
+ Nickels: 0
+ Pennies: 2
+
+ */
