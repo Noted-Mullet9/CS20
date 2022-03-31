@@ -9,7 +9,7 @@ public class NumberSum {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter a number: ");
+    System.out.println("Enter a numb: ");
     
     int num = input.nextInt();
     
@@ -20,6 +20,8 @@ public class NumberSum {
     	num2+=1; 
     	
     	System.out.println(num2);
+    	
+    	
     	
       }
   } 
