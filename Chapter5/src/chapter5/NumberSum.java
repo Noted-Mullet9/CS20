@@ -3,7 +3,7 @@ package chapter5;
 
 import java.util.Scanner;
 
-public class OddSum {
+public class NumberSum {
 
   public static void main(String[] args) {
 
@@ -13,15 +13,15 @@ public class OddSum {
     
     int num = input.nextInt();
     
-    var num2 = 0 ;
-
-    for (var i = 0; i < 10; i++) {
-      // some code
-    }
-
-    // Here i is 10
+    int num2 = 0;
+    
+    while (num2 < num ) { 
+    	
+    	num2+=1; 
+    	
+    	System.out.println(num2);
+    	
+      }
   } 
   
 }
-
-
