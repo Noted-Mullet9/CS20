@@ -14,6 +14,8 @@ while (num < 20 ) {
 	
 	System.out.println(num);
 	
+	System.out.println("Hi");
+	
   }
 
 } 

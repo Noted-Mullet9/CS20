@@ -9,4 +9,4 @@ public class OddSum {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter a number: ");
+    System.out.println("Enter a numb: ");
