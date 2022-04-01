@@ -1,4 +1,3 @@
-
 package chapter5;
 
 import java.util.Scanner;
@@ -13,14 +12,17 @@ public class OddSum {
     
     int num = input.nextInt();
     
-    var num = 0 ;
-
-    for (var i = 0; i < 10; i++) {
-
-    }
-
+    int num2 = 1;
+    
+    while (num2 < num ) { 
+    	
+    	System.out.println(num2);
+    	
+    	num2+=2;
+    	
+    	
+      }
   } 
   
 }
-
 

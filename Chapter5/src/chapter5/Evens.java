@@ -8,7 +8,7 @@ public class Evens {
 
 int num = 0; 
 
-while (num2 < 20 ) { 
+while (num < 20 ) { 
 	
 	num+=2; 
 	
