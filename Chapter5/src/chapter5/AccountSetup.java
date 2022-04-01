@@ -22,7 +22,7 @@ public class AccountSetup {
     
     System.out.println("Your entered username is: " + username);
     
-    System.out.println("Your entered pass is: " + password);
+    System.out.println("Your entered pass is : " + password);
 
     
     

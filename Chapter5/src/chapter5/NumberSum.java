@@ -19,7 +19,7 @@ public class NumberSum {
     	
     	num2+=1; 
     	
-    	System.out.println(num2);
+    	System.out.println(num);
     	
     	
     	

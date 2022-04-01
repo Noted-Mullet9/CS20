@@ -13,13 +13,12 @@ public class OddSum {
     
     int num = input.nextInt();
     
-    var num2 = 0 ;
+    var num = 0 ;
 
     for (var i = 0; i < 10; i++) {
-      // some code
+
     }
 
-    // Here i is 10
   } 
   
 }
