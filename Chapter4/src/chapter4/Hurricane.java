@@ -1,5 +1,17 @@
 package chapter4;
 
+/*
+
+Program: CT2.java          Last Date of this Revision: March 9, 2022
+
+Purpose: Critical thinking question #2 on pg. 70
+
+Author: Alador Tesema, 
+School: CHHS
+Course: Computer Science 20
+
+*/
+
 import java.util.Scanner;
 
 public class Hurricane {
@@ -51,3 +63,12 @@ public class Hurricane {
   }
 
 }
+
+/* Screen Dump
+
+What category level is this Hurricane: 
+5
+Category 5: greater than 155 mph or 135 kt or 249 km/hr
+
+
+*/
