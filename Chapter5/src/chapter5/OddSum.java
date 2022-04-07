@@ -20,11 +20,13 @@ public class OddSum {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter a numb: ");
+    System.out.println("Enter a number: ");
     
     int num = input.nextInt();
     
     int num2 = 1;
+    
+    int num3 = 0; 
     
     while (num2 < num ) { 
     	
@@ -32,8 +34,12 @@ public class OddSum {
     	
     	num2+=2;
     	
-    	
+    	num3 += num2; 
+
       }
+    
+    System.out.println(num3);
+    
   } 
   
 }

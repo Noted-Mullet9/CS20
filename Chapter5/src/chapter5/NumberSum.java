@@ -26,15 +26,22 @@ public class NumberSum {
     
     int num2 = 0;
     
+    int num3 = 0;
+    
     while (num2 < num ) { 
     	
     	num2+=1; 
     	
-    	System.out.println(num);
+    	num3 += num2;
     	
-    	
-    	
+    	System.out.println(num2);
+    
       }
+    
+     
+    
+    System.out.println(num3);
+    
   } 
   
 }
