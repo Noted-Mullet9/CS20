@@ -2,9 +2,11 @@ package chapter4;
 
 /*
 
-Program: CT2.java          Last Date of this Revision: March 9, 2022
+Program: SurfsUp3.java          Last Date of this Revision: March 9, 2022
 
-Purpose: Critical thinking question #2 on pg. 70
+Purpose: Modify the SurfsUp application to display "Great day for surfing!" when the waves are 6 feet or over, "Go body boarding!" 
+         when the waves are between 3 and 6 feet, "Go for a swim." when the waves are from 0 to 3 feet 
+         and "Whoa! What kind of surf is that?" otherwise. 
 
 Author: Alador Tesema, 
 School: CHHS
@@ -45,3 +47,12 @@ public class SurfsUp3 {
   }
 
 }
+
+/* Screen Dump
+
+What is the wave height today (in feet)?:     
+10
+
+Great day for surfing!
+
+*/

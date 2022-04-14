@@ -2,9 +2,11 @@ package chapter4;
 
 /*
 
-Program: CT2.java          Last Date of this Revision: March 9, 2022
+Program: RandomNum.java          Last Date of this Revision: March 9, 2022
 
-Purpose: Critical thinking question #2 on pg. 70
+Purpose: Create a RandomNum application that prompts the user for two numbers.
+         The first number is a minimum value and the second is a maximum value. 
+         RandomNum then displays an integer between the min and max value entered by the user. 
 
 Author: Alador Tesema, 
 School: CHHS
@@ -30,13 +32,13 @@ public class RandomNum {
 
     Num1 = input.nextInt();
 
-    System.out.println("Enter a second number: ");
+    System.out.println("\nEnter a second number: ");
 
     Num2 = input.nextInt();
 
     Random = Num1 + (int)(Math.random() * (Num2 - Num1 + 1));
 
-    System.out.println("Random number between the first and second number you entered: " + Random);
+    System.out.println("\nRandom number between the first and second number you entered: " + Random);
 
   }
 
@@ -46,8 +48,10 @@ public class RandomNum {
 
 Enter a number: 
 2
+
 Enter a second number: 
 5
-Random number between the first and second number you entered: 5
+
+Random number between the first and second number you entered: 4
 
 */

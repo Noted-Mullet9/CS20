@@ -2,9 +2,9 @@ package chapter4;
 
 /*
 
-Program: CT2.java          Last Date of this Revision: March 9, 2022
+Program: SurfsUp2.java          Last Date of this Revision: March 9, 2022
 
-Purpose: Critical thinking question #2 on pg. 70
+Purpose: Modify the SurfsUp application to display "Great day for surfing!" when the waves are 6 feet or over and "Go body boarding!" when the waves are less than 6 feet
 
 Author: Alador Tesema, 
 School: CHHS
@@ -26,11 +26,11 @@ public class SurfsUp2 {
     wHeight = input.nextInt();
 
     if (wHeight >= 6) {
-      System.out.println("Great day for surfing!");
+      System.out.println("\nGreat day for surfing!");
 
     } else if (wHeight > 3 && wHeight < 6) {
 
-      System.out.println("Go body boarding!");
+      System.out.println("\nGo body boarding!");
 
     }
 
@@ -40,6 +40,9 @@ public class SurfsUp2 {
 
 /* Screen Dump
 
-Rectangles Perimeter: 34
+What is the wave height today (in feet)?:     
+10
+
+Great day for surfing!
 
 */
