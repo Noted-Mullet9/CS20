@@ -7,10 +7,10 @@ private static final double PT= 3.14;
 private double radius;
 
 
-public Circle () {
+public Circle (int radius) {
 	
 	
-radius = 1;
+
 
 }
 
@@ -19,6 +19,14 @@ public void setRadius (double newRadius) {
 	radius = newRadius; 
 	
 }
+
+
+public static void displayAreaFormula() {
+	
+	System.out.println("The formula for the area of a circle is a = Pi*r*r");
+	
+}
+
 
 public double area() {
 	

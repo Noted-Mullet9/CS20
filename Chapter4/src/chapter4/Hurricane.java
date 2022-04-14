@@ -2,9 +2,9 @@ package chapter4;
 
 /*
 
-Program: CT2.java          Last Date of this Revision: March 9, 2022
+Program: Hurricane.java          Last Date of this Revision: March 9, 2022
 
-Purpose: Critical thinking question #2 on pg. 70
+Purpose: Create a Hurricane application that displays the wind speed for the hurricane category entered by the user
 
 Author: Alador Tesema, 
 School: CHHS
