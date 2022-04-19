@@ -52,4 +52,34 @@ public double Circumference() {
 	return circleCircumference; 
 	
 }
+
+public boolean equals(Object c) {
+	
+	 
+	Circle testObj = (Circle)c; 
+	
+	if  (testObj.getRadius() == radius) {
+		
+		return(true);
+		
+	} else { 
+		
+		return (false); 
+				
+	}
+	
 }
+	
+	
+	public String toString()  {
+		
+		String circleString; 
+		
+		circleString = "Circle has radius " +  radius; 
+		
+		return(circleString);
+	
+}
+
+}
+
