@@ -16,10 +16,9 @@ public class MySavings {
 
   private JFrame frame;
   private JTextField input;
-  private int piggyBank;
   private JLabel output;
 
-  int newTotal;
+ PiggyBank pb = new PiggyBank();
 
   /**
    * Launch the application.
@@ -102,14 +101,50 @@ public class MySavings {
 
     JButton Submit = new JButton("Submit");
     Submit.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+      public void actionPerformed(ActionEvent e) 
+      {
 
         int userinput = Integer.parseInt(input.getText());
 
-          output.setText(String.valueOf(newTotal));
+          //output.setText(String.valueOf(newTotal));
           // System.out.println(String.valueOf(piggyBank));
           
+          if(userinput == 1)
+          {
+        	pb.giveTotal();
+          }
+          else if(userinput == 2)
+          {
+        	  pb.addCoin(0.01);
+        	  output.setText(String.valueOf(pb.giveTotal()));
+          }
+          else if(userinput == 3)
+          {
+        	  pb.addCoin(0.05);
+        	  output.setText(String.valueOf(pb.giveTotal()));
+          }
+          else if(userinput == 4)
+          {
+        	  pb.addCoin(0.10);
+        	  output.setText(String.valueOf(pb.giveTotal()));
+          }
+          else if(userinput == 5)
+          {
+        	  pb.addCoin(0.25);
+        	  output.setText(String.valueOf(pb.giveTotal()));
+          }
           
+          else if(userinput == 6)
+          {
+        	  pb.removeCoin();
+        	  output.setText(String.valueOf(pb.giveTotal()));
+          }
+          
+          else if(userinput == 0)
+          {
+        	  System.exit(0);
+          }
+
 
       }
 
@@ -121,7 +156,7 @@ public class MySavings {
     output.setBounds(10, 208, 275, 42);
     panel.add(output);
 
-    piggyBank = 0;
+   
   }
 
 }
