@@ -1,19 +1,34 @@
 package chapter7;
 
+import java.util.Scanner;
+
 public class AdderMethods {
 	
-	private double random; 
-	private double random2; 
-	private double random3; 
+	public static int random; 
+	public static int random2; 
+	private int answer;
+	private int score = 0;
+	private int tries = 0;
+	
+	Scanner input = new Scanner(System.in);
 	
 	public AdderMethods()
 	{
-		random = (Math.random() * 10) + 1;
-		random2 = (Math.random() * 10) + 1;
-		random3 = (Math.random() * 10) + 1;
-			
-		}
-
+		random = (int) (Math.random() * 20) + 0;
+		random2 = (int) (Math.random() * 20) + 0;
+		answer = random + random2;
+}
+	
+	public void addScore(int points)
+	{
+		 score = score + points;
 	}
+	
+	public int giveScore()
+	{
+		return score;
+	}
+	
 
-
+	
+}
