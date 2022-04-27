@@ -6,7 +6,7 @@ public class AdderMethods {
 	
 	public static int random; 
 	public static int random2; 
-	private int answer;
+	public static int answer;
 	private int score = 0;
 	private int tries = 0;
 	

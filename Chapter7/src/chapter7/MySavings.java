@@ -94,7 +94,7 @@ public class MySavings {
     p8.setBounds(298, 112, 113, 14);
     panel.add(p8);
 
-    input = new JTextField();
+    input =     new JTextField();
     input.setBounds(280, 141, 131, 56);
     panel.add(input);
     input.setColumns(10);

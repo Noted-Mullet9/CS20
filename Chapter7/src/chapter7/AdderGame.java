@@ -8,12 +8,18 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class AdderGame {
+public class AdderGame implements ActionListener{
 
 	private JFrame frame;
-	private JTextField textField;
-
+	private JTextField input;
+	//private JTextField input;
+	private JLabel output;
+	AdderMethods am = new AdderMethods();
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -52,26 +58,54 @@ public class AdderGame {
 		panel.setLayout(null);
 		
 		JLabel Question = new JLabel("Label");
-		Question.setBounds(146, 78, 147, 32);
-		Question.setText(AdderMethods.random + "+" + AdderMethods.random2);
+		Question.setBounds(147, 78, 59, 32);
+		Question.setText(AdderMethods.random + " + " + AdderMethods.random2 + " = ");
 		panel.add(Question);
 		
-		textField = new JTextField();
-		textField.setBounds(207, 78, 86, 32);
-		panel.add(textField);
-		textField.setColumns(10);
-		
-		JButton submitButton = new JButton("Submit");
-		submitButton.setBounds(163, 132, 89, 23);
-		panel.add(submitButton);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(95, 192, 250, 32);
-		panel.add(lblNewLabel);
+		input = new JTextField();
+		input.setBounds(202, 78, 86, 32);
+		panel.add(input);
+		input.setColumns(10);
 		
 		JLabel Title = new JLabel("Adder Game");
 		Title.setFont(new Font("Gill Sans Ultra Bold Condensed", Font.PLAIN, 18));
 		Title.setBounds(163, 0, 125, 41);
 		panel.add(Title);
+		
+		JLabel dis = new JLabel("New label");
+		dis.setBounds(57, 182, 367, 48);
+		panel.add(dis);
+		
+		JButton btnNewButton = new JButton("Submit");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				 int userinput = Integer.parseInt(input.getText());
+				  
+				  {
+				          
+				          if(userinput == am.answer)
+				          {
+				        	  dis.setText("Correct!");
+				          }
+				          else if(userinput != am.answer)
+				          {
+
+				        	  dis.setText("Wrong!");
+				          }
+				          else if(userinput == 999)
+				          {
+			                   System.exit(0);
+				          }
+				         
+				      }
+			}
+				
+			
+		});
+		btnNewButton.setBounds(174, 118, 89, 23);
+		panel.add(btnNewButton);
 	}
+				 
 }
+
