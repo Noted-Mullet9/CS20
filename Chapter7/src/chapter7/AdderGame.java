@@ -15,7 +15,6 @@ public class AdderGame implements ActionListener{
 
 	private JFrame frame;
 	private JTextField input;
-	//private JTextField input;
 	private JLabel output;
 	AdderMethods am = new AdderMethods();
 	
@@ -72,7 +71,7 @@ public class AdderGame implements ActionListener{
 		Title.setBounds(163, 0, 125, 41);
 		panel.add(Title);
 		
-		JLabel dis = new JLabel("New label");
+		JLabel dis = new JLabel("");
 		dis.setBounds(57, 182, 367, 48);
 		panel.add(dis);
 		
@@ -82,30 +81,42 @@ public class AdderGame implements ActionListener{
 			{
 				 int userinput = Integer.parseInt(input.getText());
 				  
-				  {
+				  
 				          
-				          if(userinput == am.answer)
+				         if(userinput == am.answer)
 				          {
-				        	  dis.setText("Correct!");
-				          }
-				          else if(userinput != am.answer)
-				          {
+				 
+				        	 System.out.print(am.question);
+				        	 
+		          }
 
-				        	  dis.setText("Wrong!");
+				         else if(userinput != am.answer)
+				          
+				          {
+				        	 
 				          }
 				          else if(userinput == 999)
 				          {
 			                   System.exit(0);
 				          }
-				         
-				      }
-			}
-				
-			
+	
+				      
+
+			};
+		
 		});
+				
+
 		btnNewButton.setBounds(174, 118, 89, 23);
 		panel.add(btnNewButton);
 	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 				 
 }
+
 
