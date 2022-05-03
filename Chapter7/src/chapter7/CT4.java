@@ -2,6 +2,6 @@ package chapter7;
 
 public class CT4 {
 
-	//It can be both valid or invalid based upon whether the 
+	//It is valid because it is simply altering the value of the radius to 5
 	
 }
