@@ -84,11 +84,34 @@ public class AdderG {
 				
 				
 				int response = Integer.parseInt(Answer.getText());
-
-				Output.setText(q1.Check(response));
+			         	      
 				
+				if (response == q1.correct) {
+			                
+			    	    	Output.setText("Correct!");
+			    	    	
+			    	    	Prompt.setText(q1.askQuestion());
+			    	    	
+			    	    	Answer.setText(null);
+			    	    	
+			    	    	q1.count ++;
+			    	    	
+			    	    	Score.setText(String.valueOf(q1.count));
+			    	    	
+			    	    	q1.tries = 0;
+			    	    
+			            } else if (response == 999 || q1.tries == 3)  {
+			                
+			            	System.exit(0);
+	
+			            } else {
+			                
+			            	Output.setText("Wrong, try again.");
+			            	
+			            	q1.tries++;
+			           }
+			    
 				
-
 			}
 
 		});
