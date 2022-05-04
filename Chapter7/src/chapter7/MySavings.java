@@ -1,5 +1,17 @@
 package chapter7;
 
+/*
+
+Program: MySavings.java          Last Date of this Revision: May 4, 2022
+
+Purpose: Create a 
+
+Author: Alador Tesema, 
+School: CHHS
+Course: Computer Science 20
+
+*/
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

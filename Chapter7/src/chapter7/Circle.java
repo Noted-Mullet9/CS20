@@ -1,5 +1,17 @@
 package chapter7;
 
+/*
+
+Program: Circle.java          Last Date of this Revision: May 4, 2022
+
+Purpose: Critical thinking question #5 on pg. 70
+
+Author: Alador Tesema, 
+School: CHHS
+Course: Computer Science 20
+
+*/
+
 public class Circle {
 	
 private static final double PT= 3.14;

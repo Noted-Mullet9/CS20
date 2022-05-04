@@ -1,5 +1,17 @@
 package chapter7;
 
+/*
+
+Program: AdderG.java          Last Date of this Revision: May 4, 2022
+
+Purpose: The Adder Game prompts a player for the answer to an addition problem.
+
+Author: Alador Tesema, 
+School: CHHS
+Course: Computer Science 20
+
+*/
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
