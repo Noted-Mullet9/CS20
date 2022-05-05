@@ -2,9 +2,10 @@ package chapter7;
 
 /*
 
-Program: MySavings.java          Last Date of this Revision: May 4, 2022
+Program: MySavings.java          Last Date of this Revision: May 5, 2022
 
-Purpose: Create a 
+Purpose: Create an application that displays a menu of choices for entering pennies, nickels, dimes, and quarters 
+into a piggy bank and then prompts the user for their selection
 
 Author: Alador Tesema, 
 School: CHHS
@@ -30,7 +31,7 @@ public class MySavings {
   private JTextField input;
   private JLabel output;
 
- PiggyBank pb = new PiggyBank();
+  PiggyBank pb = new PiggyBank();
 
   /**
    * Launch the application.
@@ -106,57 +107,41 @@ public class MySavings {
     p8.setBounds(298, 112, 113, 14);
     panel.add(p8);
 
-    input =     new JTextField();
+    input = new JTextField();
     input.setBounds(280, 141, 131, 56);
     panel.add(input);
     input.setColumns(10);
 
     JButton Submit = new JButton("Submit");
     Submit.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) 
-      {
+      public void actionPerformed(ActionEvent e) {
 
-        int userinput = Integer.parseInt(input.getText());
+        int userinput = Integer.parseInt(input.getText()); //records user input
 
-          //output.setText(String.valueOf(newTotal));
-          // System.out.println(String.valueOf(piggyBank));
-          
-          if(userinput == 1)
-          {
-        	pb.giveTotal();
-          }
-          else if(userinput == 2)
-          {
-        	  pb.addCoin(0.01);
-        	  output.setText(String.valueOf(pb.giveTotal()));
-          }
-          else if(userinput == 3)
-          {
-        	  pb.addCoin(0.05);
-        	  output.setText(String.valueOf(pb.giveTotal()));
-          }
-          else if(userinput == 4)
-          {
-        	  pb.addCoin(0.10);
-        	  output.setText(String.valueOf(pb.giveTotal()));
-          }
-          else if(userinput == 5)
-          {
-        	  pb.addCoin(0.25);
-        	  output.setText(String.valueOf(pb.giveTotal()));
-          }
-          
-          else if(userinput == 6)
-          {
-        	  pb.removeCoin();
-        	  output.setText(String.valueOf(pb.giveTotal()));
-          }
-          
-          else if(userinput == 0)
-          {
-        	  System.exit(0);
-          }
-
+        if (userinput == 1) //determines which number the user inputs and executes the corresponding method
+        {
+          pb.giveTotal(); //returns the total in the piggy bank
+        } else if (userinput == 2) {
+          pb.addCoin(0.01); //adds a penny to the piggy bank
+          output.setText(String.valueOf(pb.giveTotal())); //returns the total in the piggy bank
+        } else if (userinput == 3) {
+          pb.addCoin(0.05); //adds a nickel to the piggy bank
+          output.setText(String.valueOf(pb.giveTotal()));
+        } else if (userinput == 4) {
+          pb.addCoin(0.10); //adds a dime to the piggy bank
+          output.setText(String.valueOf(pb.giveTotal()));
+        } else if (userinput == 5) //adds a quarter to the piggy bank
+        {
+          pb.addCoin(0.25);
+          output.setText(String.valueOf(pb.giveTotal()));
+        } else if (userinput == 6) //removes all coins from the piggy bank
+        {
+          pb.removeCoin();
+          output.setText(String.valueOf(pb.giveTotal()));
+        } else if (userinput == 0) //closes the application
+        {
+          System.exit(0);
+        }
 
       }
 
@@ -168,7 +153,6 @@ public class MySavings {
     output.setBounds(10, 208, 275, 42);
     panel.add(output);
 
-   
   }
 
 }
