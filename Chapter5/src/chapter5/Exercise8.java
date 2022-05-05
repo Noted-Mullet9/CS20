@@ -2,9 +2,9 @@
  
  /*
 
- Program: Exercise8.java          Last Date of this Revision: March 9, 2022
+ Program: Exercise8.java          Last Date of this Revision: May 5, 2022
 
- Purpose: Critical thinking question #5 on pg. 70
+ Purpose: Create an application that prompts the user to guess a number between 1 and 20
 
  Author: Alador Tesema, 
  School: CHHS
@@ -30,24 +30,33 @@
          
          do {
         	 
-        	 //prompts a user for a 2 digit number
+        	 //prompts a user for a number between 1 and 20
              System.out.print("Enter a number between 1 and 20: ");
 
              //records user input
               number = input.nextInt();
               
-         if (number != random) {
+         if (number != random) { //determines if the users guess was incorrect 
               
-              System.out.println("Sorry you guessed wrong. \n");
+              System.out.println("\nSorry you guessed wrong. \n"); //returns that the user was wrong
          }
         	}
         	
-         while (number != random);
+         while (number != random); //determines if the users guess was correct 
 
         	  }
          
-         System.out.println("Congrats you guessed correct! ");
+         System.out.println("\nCongrats you guessed correct! "); //returns the user was correct
          
          
        }
  }
+ 
+ /* Screen Dump
+
+Enter a number between 1 and 20: 8
+
+Congrats you guessed correct! 
+
+ */
+

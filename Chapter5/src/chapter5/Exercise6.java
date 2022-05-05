@@ -2,9 +2,9 @@ package chapter5;
 
 /*
 
-Program: Exercise6.java          Last Date of this Revision: March 9, 2022
+Program: Exercise6.java          Last Date of this Revision: May 5, 2022
 
-Purpose: Critical thinking question #5 on pg. 70
+Purpose: Create an application that prompts the user for a non-negative integer and then displays the sum of the digits
 
 Author: Alador Tesema, 
 School: CHHS
@@ -37,10 +37,19 @@ public class Exercise6 {
         int sum = ones + tens + hundreds; 
 
         //The following lines output which numbers belong in the ones, tens and hundreds place 
-        System.out.print("The sum of the digits is: " + sum); 
+        System.out.print("\nThe sum of the digits is: " + sum); 
       }
 
     }
     	
   } 
+
+/* Screen Dump
+
+Enter a positive number: 55
+
+The sum of the digits is: 10
+
+*/
+
 

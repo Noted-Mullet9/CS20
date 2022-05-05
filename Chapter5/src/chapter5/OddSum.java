@@ -2,9 +2,9 @@ package chapter5;
 
 /*
 
-Program: OddSum.java          Last Date of this Revision: March 9, 2022
+Program: OddSum.java          Last Date of this Revision: May 5, 2022
 
-Purpose: Critical thinking question #5 on pg. 70
+Purpose: Create an application that prompts the user for a number and then sums the odd numbers from 1 to the number entered
 
 Author: Alador Tesema, 
 School: CHHS
@@ -20,9 +20,9 @@ public class OddSum {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter a number: ");
+    System.out.println("Enter a number: "); //prompts user for a number
     
-    int num = input.nextInt();
+    int num = input.nextInt(); //records input
     
     int num2 = 1;
     
@@ -30,17 +30,37 @@ public class OddSum {
     
     while (num2 < num ) { 
     	
-    	System.out.println(num2);
+    	System.out.println("\n" + num2); //returns all odd numbers between 1 and the number entered
     	
-    	num2+=2;
+    	num2+=2; //keeps adding 2 till it reaches the number entered by the user
     	
-    	num3 += num2; 
+    	num3 += num2; //calculates the sum of all numbers displayed
 
       }
     
-    System.out.println(num3);
+    System.out.println("\n" + num3); //returns the sum of all numbers displayed
     
   } 
   
 }
+
+/* Screen Dump
+
+Enter a number: 
+10
+
+1
+
+3
+
+5
+
+7
+
+9
+
+35
+
+
+*/
 

@@ -2,9 +2,9 @@ package chapter5;
 
 /*
 
-Program: AccoutnSetup.java          Last Date of this Revision: March 9, 2022
+Program: AccountSetup.java          Last Date of this Revision: May 5, 2022
 
-Purpose: Critical thinking question #5 on pg. 70
+Purpose: Create an application that prompts the user for a username and password
 
 Author: Alador Tesema, 
 School: CHHS
@@ -20,28 +20,36 @@ public class AccountSetup {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter a username: ");
+    System.out.println("Enter a username: "); //prompts the user for a username
 
-    String username = input.nextLine();
+    String username = input.nextLine(); //records user input
     
-    System.out.println("Enter a username: ");
+    System.out.println("\nEnter a password: "); //prompts the user for a password
 
-    String password = input.nextLine();
+    String password = input.nextLine(); 
     
-    username = username.toLowerCase();
+    username = username.toLowerCase(); //converts any uppercase letters to lowercase
     
     password = password.toLowerCase();
     
-    System.out.println("Your entered username is: " + username);
+    System.out.println("\nYour entered username is: " + username); //returns the entered username
     
-    System.out.println("Your entered password is : " + password);
-
-    
-    
-    
-    
-    
-    
+    System.out.println("\nYour entered password is : " + password); //returns the entered password
+        
   }
   
 }
+
+/* Screen Dump
+
+Enter a username: 
+alador
+
+Enter a password: 
+tesema
+
+Your entered username is: alador
+
+Your entered password is : tesema
+
+*/
