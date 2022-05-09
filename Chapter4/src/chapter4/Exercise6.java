@@ -2,9 +2,10 @@ package chapter4;
 
 /*
 
-Program: Exercise6.java          Last Date of this Revision: March 9, 2022
+Program: Exercise6.java          Last Date of this Revision: May 9, 2022
 
-Purpose: Create a RandomNum
+Purpose: Create a RandomNum application that prompts the user with a randomly generated addition, subtraction, multiplication, 
+and division math question
 
 Author: Alador Tesema, 
 School: CHHS
@@ -26,25 +27,26 @@ public class Exercise6 {
     
     int random3; 
     
-    int problem; 
+    int problem = 0; 
     
     
 
-    random = (int)(10 * Math.random() + 1);
+    random = (int)(10 * Math.random() + 1); //the following lines create 3 random numbers
     
     random2 = (int)(10 * Math.random() + 1);
     
     random3 = (int)(4 *Math.random() + 1);
     
-    switch (random3) {
+    switch (random3) { //the following lines determine whether to return an addition, subtraction, multiplication, or division question 
+    //and calculate the answer 
 
     case 1:
 
-      problem = random + random2; 
+      problem = random + random2; //calculates the answer to the math question
       
-      System.out.println("What is" + random + "+" + random2);
+      System.out.println("What is " + random + " + " + random2); //returns math question 
       
-      int answer = input.nextInt();
+      int answer = input.nextInt(); //records user input
 
       break;
 
@@ -52,9 +54,9 @@ public class Exercise6 {
 
         problem = random - random2; 
         
-        System.out.println("What is" + random + "-" + random2);
+        System.out.println("What is " + random + " - " + random2);
         
-        int answer = input.nextInt();
+        answer = input.nextInt();
 
       break;
 
@@ -62,7 +64,7 @@ public class Exercise6 {
 
         problem = random * random2; 
         
-        System.out.println("What is" + random + "*" + random2);
+        System.out.println("What is " + random + " * " + random2);
 
       break;
 
@@ -70,7 +72,7 @@ public class Exercise6 {
 
         problem = random / random2; 
         
-        System.out.println("What is" + random + "/" + random2);
+        System.out.println("What is " + random + " / " + random2);
         
 
       break;
@@ -78,7 +80,17 @@ public class Exercise6 {
 
     }
     
-    int answer = input.nextInt();
+    int answer = input.nextInt(); //records user input
+    
+    if (answer == problem) { //the following lines determine whether the user answered the question right or wrong and returns it
+        
+        System.out.println("\nCorrect!");
+
+      } else if (answer != problem) {
+
+        System.out.println("\nWrong!");
+
+        }
 
     
     
@@ -88,12 +100,9 @@ public class Exercise6 {
 
 /* Screen Dump
 
-Enter a number: 
-2
+What is 1 * 3
+3
 
-Enter a second number: 
-5
-
-Random number between the first and second number you entered: 4
+Correct!
 
 */

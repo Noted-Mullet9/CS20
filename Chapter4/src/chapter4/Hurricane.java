@@ -2,7 +2,7 @@ package chapter4;
 
 /*
 
-Program: Hurricane.java          Last Date of this Revision: March 9, 2022
+Program: Hurricane.java          Last Date of this Revision: May 9, 2022
 
 Purpose: Create a Hurricane application that displays the wind speed for the hurricane category entered by the user
 
@@ -22,11 +22,11 @@ public class Hurricane {
 
     int Category;
 
-    System.out.println("What category level is this Hurricane: ");
+    System.out.println("What category level is this Hurricane: "); //prompts for the category level of the hurricane
 
-    Category = input.nextInt();
+    Category = input.nextInt(); //records user input
 
-    switch (Category) {
+    switch (Category) { //the following lines look at the hurricanes category level and return its wind speeds in kt or km/h
 
     case 1:
 

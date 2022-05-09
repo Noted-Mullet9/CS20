@@ -2,7 +2,7 @@ package chapter4;
 
 /*
 
-Program: Exercise5.java          Last Date of this Revision: March 9, 2022
+Program: Exercise5.java          Last Date of this Revision: May 9, 2022
 
 Purpose: Create a Grade application that prompts the user for the percentage earned on a test or other graded work and then displays the corresponding letter grade
 
@@ -22,11 +22,11 @@ public class Exercise5 {
     
     int percent;
 
-    System.out.println("Enter the percentage: ");
+    System.out.println("Enter the percentage: "); //prompts for grade percentage
 
-    percent = input.nextInt();
+    percent = input.nextInt(); //records user input
 
-    if (percent >= 90 && percent <= 100) {
+    if (percent >= 90 && percent <= 100) { //the following lines determine which letter grade to return based on grade percentage 
      
       System.out.println("\nThe corresponding letter grade is: A");
 

@@ -2,7 +2,7 @@ package chapter4;
 
 /*
 
-Program: RandomNum.java          Last Date of this Revision: March 9, 2022
+Program: RandomNum.java          Last Date of this Revision: May 9, 2022
 
 Purpose: Create a RandomNum application that prompts the user for two numbers.
          The first number is a minimum value and the second is a maximum value. 
@@ -28,7 +28,7 @@ public class RandomNum {
 
     int Random;
 
-    System.out.println("Enter a number: ");
+    System.out.println("Enter a number: "); //the following lines prompt for 2 numbers and record it
 
     Num1 = input.nextInt();
 
@@ -36,9 +36,10 @@ public class RandomNum {
 
     Num2 = input.nextInt();
 
-    Random = Num1 + (int)(Math.random() * (Num2 - Num1 + 1));
+    Random = Num1 + (int)(Math.random() * (Num2 - Num1 + 1)); //creates a random number inbetween 
+    //the first and second numbers entered by the user
 
-    System.out.println("\nRandom number between the first and second number you entered: " + Random);
+    System.out.println("\nRandom number between the first and second number you entered: " + Random); //returns the number that was calculated
 
   }
 
