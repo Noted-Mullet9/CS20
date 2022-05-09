@@ -4,11 +4,11 @@ public class CT4 {
 	
 	/*
 
-a)   a = (int)(50 * Math.random() + 1);
+a)   a = 1 + (int)(Math.random() * ((50 - 1) + 1));
 
-b)   b = (int)(100 * Math.random() + 20);
+b)   b = 20 + (int)(Math.random() * ((100 - 20) + 1));
 
-c)   c = (int)(20 * Math.random() + 10);
+c)   c = 1 + (int)(Math.random() * ((20)));
 
 	*/
 
