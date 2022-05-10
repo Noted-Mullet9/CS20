@@ -14,7 +14,7 @@ public class Reverse {
 			  numbers[i] = i;
 			 
 			}
-		  //
+		  
 		  //display countdown
 		  System.out.println("Countdown!!!!");
 		  
