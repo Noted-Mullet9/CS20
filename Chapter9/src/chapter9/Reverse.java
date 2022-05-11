@@ -6,6 +6,7 @@ public class Reverse {
 		  
 		  final int num_elements = 10;
 		  
+		  //creates array
 		  int [] numbers = new int [num_elements];
 		  
 		  //store numbers
@@ -18,10 +19,10 @@ public class Reverse {
 		  //display countdown
 		  System.out.println("Countdown!!!!");
 		  
-		  
+		  //creates a for loop that displays all the numbers in the array in reversed order
 		  for (int i = num_elements - 1; i >= 0; i--) {
 			  
-			  System.out.println(numbers[i]);
+			  System.out.println("\n" + numbers[i]);
 			 
 			}
 		  
