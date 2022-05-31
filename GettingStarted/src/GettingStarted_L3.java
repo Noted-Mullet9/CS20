@@ -1,16 +1,16 @@
 
-
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 
-public class GettingStarted {
-	
-	static int bruh;
-	
-	static int n;
-	
+public class GettingStarted_L3 {
     //Handle Exceptions | Exceptions will happen in your code from time to time. These are caused by unexpected things happening. Make sure you’ve added "throws Exception" to your main method.
     public static void main(String[] args) throws Exception{
+
+    	int count = 0;
+    	
+    	boolean test = false;
+    	
+    	boolean test2 = false;
 
         //Create | Create objects for your buttons and LEDs.
         DigitalInput redButton = new DigitalInput();
@@ -37,39 +37,47 @@ public class GettingStarted {
         //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
         while(true){
 
-            if( greenButton.getState() == true){
-               
-            	n = 1 ;
-            	
-            	redLED.setState(false);
-                
+            if( greenButton.getState()){
+                redLED.setState(false);
             } else {
-                
-            	redLED.setState(true);
-                
-                n = 0 ;
+                redLED.setState(true);
             }
 
-            if(redButton.getState() == true){
+            if(redButton.getState()){
                 greenLED.setState(false);
-                
-                n = 1 ;
-            
             } else {
                 greenLED.setState(true);
-                
-                n = 0 ;
             }
             
-            if (n == 1) { 
+            if (greenButton.getState() == true && test == false) {
             	
-            	bruh ++;
+            	 count ++;
             	
-            	System.out.println("Count: " + bruh);
-            	
+            	System.out.println("Button Presses: " + count);
+            	test = true;
             	
             }
+            else if (greenButton.getState() == false) {
+            	test = false;
+            }
+            
+            
+            
+            if (redButton.getState() == true && test2 == false) {
+            	
+            	 count ++;
+            	
+            	System.out.println("Button Presses: " + count);
+            	
+            	test2 = true;
+            	
+            }
+            else if (redButton.getState() == false) {
+            	test2 = false;
+            }
+            
             Thread.sleep(150);
+            
         }
     }
 }
