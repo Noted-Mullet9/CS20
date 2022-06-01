@@ -59,7 +59,7 @@ public class TugOfWar {
 
             	test = true;
             	
-            	System.out.println("Test: " + count);
+            	System.out.println("\nGreen: " + count);
             	
             }
             else if (greenButton.getState() == false) {
@@ -75,7 +75,7 @@ public class TugOfWar {
             	
             	test2 = true;
             	
-            	System.out.println("Test 2:" + count2);
+            	System.out.println("\nRed: " + count2);
             	
             }
             else if (redButton.getState() == false) {
@@ -86,12 +86,12 @@ public class TugOfWar {
             if (count == 10 && LED < 5){
                 
             	greenLED.setState(true);
-                 Thread.sleep(1000);
+                 Thread.sleep(1500);
                  greenLED.setState(false);
                  
                  LED ++ ;
                  
-                 System.out.println("PLAYER 1 WINS!!!");
+                 System.out.println("\nPLAYER 1 WINS!!!");
                  
                  
                  System.exit(0);
@@ -103,11 +103,11 @@ public class TugOfWar {
                 	 LED++;
                 	 
                 	 redLED.setState(true);
-                     Thread.sleep(1000);
+                     Thread.sleep(1500);
                      redLED.setState(false);
-                     Thread.sleep(1000);
+                     Thread.sleep(1500);
                      
-                     System.out.println("PLAYER 2 WINS!!!");
+                     System.out.println("\nPLAYER 2 WINS!!!");
                      
                      System.exit(0);
                  }
