@@ -17,18 +17,37 @@ public class GettingStarted_L5 {
         //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms.
         while(true){
         	
+        	if (humiditySensor.getHumidity() > 30) {
+        		
+        		System.out.println("Humidity: " + humiditySensor.getHumidity() + " %RH ");
+        		
+        	}
+        		
+        		
+        		else {
+        			
+        			System.out.println("Humidity is too low!");
+        			
+        		}
+        		
+        	
+        	
         	if (temperatureSensor.getTemperature() > 21) {
         		
-        		   System.out.println(temperatureSensor.getTemperature() + " °C" );
-            Thread.sleep(150);
+        		   System.out.println("\nTemperature: " + temperatureSensor.getTemperature() + " °C" );
+            Thread.sleep(1500);
         	}
         	
         	else {
         		
         		System.out.println("Too Cold");
+        		
         	}
          
         }
-    }
+    
 }
+}
+
+
   

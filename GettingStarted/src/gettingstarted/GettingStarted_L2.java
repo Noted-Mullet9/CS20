@@ -23,7 +23,7 @@ public class GettingStarted_L2 {
         	if (greenButton.getState() == true ) {
         	
         	System.out.println("Button State: " + greenButton.getState());
-            Thread.sleep(150);
+            Thread.sleep(5000);
         	
         	}
         	
