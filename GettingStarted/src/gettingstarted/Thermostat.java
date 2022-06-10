@@ -20,13 +20,13 @@ public class Thermostat {
 
 
         //Address | Address your four objects which lets your program know where to find them.
-        redButton.setHubPort(0);
+        redButton.setHubPort(5);
         redButton.setIsHubPortDevice(true);
-        redLED.setHubPort(1);
+        redLED.setHubPort(4);
         redLED.setIsHubPortDevice(true);
-        greenButton.setHubPort(5);
+        greenButton.setHubPort(0);
         greenButton.setIsHubPortDevice(true);
-        greenLED.setHubPort(4);
+        greenLED.setHubPort(1);
         greenLED.setIsHubPortDevice(true);
         //Open | Open establishes a connection between your object and your physical Phidget. You provide a timeout value of 1000 to give the program 1000 milliseconds (1 second) to locate your Phidget. If your Phidget can't be found, an exception occur.
         temperatureSensor.open(1000);
